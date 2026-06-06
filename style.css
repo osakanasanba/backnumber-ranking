@@ -1,6 +1,8 @@
 body{
 
-background:#121212;
+margin:0;
+
+background:#111;
 
 font-family:sans-serif;
 
@@ -10,19 +12,15 @@ display:flex;
 
 justify-content:center;
 
-align-items:center;
-
-height:100vh;
-
-margin:0;
+padding:30px;
 
 }
 
 .container{
 
-width:90%;
+width:100%;
 
-max-width:600px;
+max-width:700px;
 
 text-align:center;
 
@@ -32,7 +30,7 @@ input{
 
 width:100%;
 
-padding:15px;
+padding:16px;
 
 font-size:20px;
 
@@ -42,13 +40,29 @@ border-radius:10px;
 
 }
 
+button{
+
+padding:15px 40px;
+
+margin-top:20px;
+
+font-size:20px;
+
+border:none;
+
+border-radius:10px;
+
+cursor:pointer;
+
+}
+
 #results{
 
 background:#222;
 
-border-radius:10px;
-
 margin-top:5px;
+
+border-radius:10px;
 
 max-height:250px;
 
@@ -70,46 +84,64 @@ background:#333;
 
 }
 
-button{
-
-margin-top:20px;
-
-padding:15px 40px;
-
-font-size:20px;
-
-border:none;
-
-border-radius:10px;
-
-cursor:pointer;
-
-}
-
 #display{
 
-margin-top:50px;
+margin-top:40px;
 
-font-size:40px;
+font-size:42px;
+
+min-height:160px;
 
 font-weight:bold;
-
-min-height:150px;
 
 }
 
 .top10{
 
-animation:flash 0.5s infinite;
+animation:pulse .6s infinite;
 
 }
 
-@keyframes flash{
+@keyframes pulse{
 
-0%{transform:scale(1)}
+0%{
 
-50%{transform:scale(1.08)}
+transform:scale(1)
 
-100%{transform:scale(1)}
+}
+
+50%{
+
+transform:scale(1.08)
+
+}
+
+100%{
+
+transform:scale(1)
+
+}
+
+}
+
+#history{
+
+margin-top:40px;
+
+background:#1c1c1c;
+
+padding:20px;
+
+border-radius:10px;
+
+text-align:left;
+
+}
+
+.historyItem{
+
+padding:8px;
+
+border-bottom:1px solid #333;
 
 }
